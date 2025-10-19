@@ -1,0 +1,25 @@
+. データベース接続の準備
+
+    必要なデータベースドライバー（例：psycopg2やaiosqliteなど）とSQLAlchemyのインストール
+
+    database.pyの作成とデータベース接続設定
+
+    database.pyにセッション生成および依存性注入のための関数定義
+
+3. データモデルの定義
+
+    models.pyの作成とSQLAlchemyのBaseクラスのインポート
+
+    models.pyにテーブルに対応するPythonクラスを定義（Table、カラムなど）
+
+    database.pyで定義したデータベースにテーブルを作成する処理の追加
+
+4. ルーティングとビジネスロジックの実装
+
+    router.pyにPydanticモデル（リクエスト/レスポンス用スキーマ）を定義
+
+    router.pyにCRUD操作（作成、読み取り、更新、削除）のエンドポイントを定義
+
+    エンドポイント内でdatabase.pyのセッションを利用してデータベース操作を実装
+
+    データベース操作に非同期処理（async/await）を適用
