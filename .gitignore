@@ -1,0 +1,92 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+ENV/
+env.bak/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+*.log
+pytest_cache/
+.pytest_cache/
+
+# SQLite database
+*.db
+*.sqlite3
+
+# FastAPI specific (if using static or uploads)
+staticfiles/
+media/
+uploads/
+
+# Editor settings
+.vscode/
+.idea/
+*.swp
+
+# macOS
+.DS_Store
+
+# Docker
+*.pid
+*.log
+docker-compose.override.yml
+
+# Env files
+.env.local
+.env.*
+!env.example
+
+# Mypy / Pyright
+.mypy_cache/
+.pyrightcache/
+
+# Ruff / Pylint
+.ruff_cache/
+.pylint.d/
+
