@@ -1,5 +1,12 @@
 <div class="d-flex justify-content-start gap-3">
-  <button type="button" class="btn btn-light border-dark" hx-get="/booth" hx-trigger="click" hx-target="#main">ボタン1</button>
-  <button type="button" class="btn btn-secondary border-dark" hx-get="/school" hx-trigger="click" hx-target="#main">ボタン2</button>
-  <button type="button" class="btn btn-light border-dark" hx-get="/event" hx-trigger="click" hx-target="#main">ボタン3</button>
+  <button type="button" class="btn btn-light border-dark" hx-get="/booth" hx-trigger="click" hx-target="#main">ブース紹介</button>
+  <button type="button" class="btn btn-secondary border-dark" hx-get="/school" hx-trigger="click" hx-target="#main">スクール紹介</button>
+  <button type="button" class="btn btn-light border-dark" hx-get="/event" hx-trigger="click" hx-target="#main">タイムスケジュール</button>
 </div>
+{% for school in schools %}
+<div class="school-card">
+    <h3>{{ school[1] }}</h3>
+    <p><img src="/static/{{school[2]}}" class="w-25"></p>
+    <button type="button" class="btn btn-light border-dark" hx-get="/school/{{ school[0] }}" hx-trigger="click" hx-target="#main">この学校の詳細</button>
+</div>
+{% endfor %}

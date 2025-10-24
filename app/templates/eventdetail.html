@@ -1,0 +1,8 @@
+{{event[0].name}}<br>
+<img src="/static/{{event[0].img}}" class="w-25"><br>
+{{event[0].school.name}}<br>
+{{event[0].major}}<br>
+開始時間{{event[0].time_start}}<br>
+終了時間{{event[0].time_end}}<br>
+{{event[0].description}}<br>
+<button type="button" class="btn btn-light border-dark" hx-get="/event" hx-trigger="click" hx-target="#main">タイムスケジュールに戻る</button>

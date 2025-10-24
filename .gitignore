@@ -55,9 +55,8 @@ coverage.xml
 pytest_cache/
 .pytest_cache/
 
-# SQLite database
-*.db
-*.sqlite3
+# SQLite database 必要な場合追記
+
 
 # FastAPI specific (if using static or uploads)
 staticfiles/
